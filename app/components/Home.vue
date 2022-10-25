@@ -1,41 +1,39 @@
 <template>
-    <Page>
+    <Page class="body">
         <ActionBar>
-            <Label text="Home"/>
+            <Label text="Converter" class="header" />
         </ActionBar>
-
-        <GridLayout>
-            <Label class="info">
-                <FormattedString>
-                    <Span class="fas" text.decode="&#xf135; "/>
-                    <Span :text="message"/>
-                </FormattedString>
-            </Label>
-        </GridLayout>
+        <StackLayout>
+            <Button text ="Weight" @tap="$navigateTo(WeightPage)" class="button-home-page button-home-page-weigth" />
+            <Button text ="Length" @tap="goToLengthPage()" class="button-home-page button-home-page-length"/>
+            <Button text ="Temperature" @tap="$navigateTo(TemperaturePage)" class="button-home-page button-home-page-temperature"/>
+            <Button text ="Сurrency" @tap="$navigateTo(CurrencyPage)" class="button-home-page button-home-page-currency"/>
+            <Button text ="Time" @tap="$navigateTo(TimePage)" class="button-home-page button-home-page-time"/>
+        </StackLayout>
     </Page>
 </template>
 
 <script>
-  export default {
-    computed: {
-      message() {
-        return "Blank {N}-Vue app";
-      }
-    }
-  };
+import lengthPage from '../components/Length/LengthPage.vue'
+import weightPage from '../components/Weight/WeightPage.vue'
+import temperaturePage from '../components/Temperature/TemperaturePage.vue'
+import currencyPage from '../components/Currency/CurrencyPage.vue'
+import timePage from '../components/Time/TimePage.vue'
+    export default {
+        data() {
+            return {
+                WeightPage: weightPage,
+                TemperaturePage: temperaturePage, 
+                CurrencyPage: currencyPage, 
+                TimePage: timePage,             
+            }
+        },
+        methods: {
+            goToLengthPage() {
+                this.$navigateTo(lengthPage);
+            }
+        }  
+    };
 </script>
 
-<style scoped lang="scss">
-    @import '@nativescript/theme/scss/variables/blue';
-
-    // Custom styles
-    .fas {
-        @include colorize($color: accent);
-    }
-
-    .info {
-        font-size: 20;
-        horizontal-align: center;
-        vertical-align: center;
-    }
-</style>
+<style src="@/style.css"></style>

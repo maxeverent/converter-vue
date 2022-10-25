@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url("./fonts/Product\ Sans\ Regular.ttf");
+}
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url("./fonts/Product\ Sans\ Bold.ttf");
+}
+
+.body {
+    background-color: #F8F8FF
+}
+
+.header {
+    font-family: "Product Sans Bold";
+    font-size: 30;
+}
+
+.button-keyboard {
+    width: 200px;
+    height: 200px;
+    font-size: 18;
+    border-radius: 20%;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+    box-shadow: 10px 5px 5px #c2bebe;
+    margin-bottom: 50px;
+    margin-left: 34px;
+}
+
+.button {
+    width: 300px;
+    height: 150px;
+    padding: 16px;
+    margin-left: 50px;
+    border-radius: 20%;
+    color: #2b2a2a;
+    box-shadow: 10px 5px 5px #c2bebe;
+    font-size: 25px;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+}
+
+.row-items {
+    padding: 16px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+}
+
+.row-text {
+    font-size: 25px;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+}
+
+.row-input-text {
+    font-size: 20px;
+    font-family: "Product Sans Regular";
+    color: #2b2a2a
+}
+
+.keyboard {
+    margin-top: 25px
+}
+
+.input {
+    border-radius: 20%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-shadow: 10px 5px 5px #c2bebe;
+}
+
+.button-page {
+    width: 600px;
+    height: 250px;
+    padding-top: -10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 20%;
+    
+    color: #2b2a2a;
+    box-shadow: 10px 5px 5px #c2bebe;
+    font-size: 25px;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+}
+
+.button-home-page {
+    width: 600px;
+    height: 250px;
+    padding-top: -150px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 20%;
+    
+    color: #2b2a2a;
+    box-shadow: 10px 5px 5px #c2bebe;
+    font-size: 25px;
+    font-family: "Product Sans Bold";
+    color: #2b2a2a;
+}
+
+.button-home-page-weigth {
+    background: url("~/images/weigth.png") no-repeat;
+    background-position: 240px 100px;
+}
+
+.button-home-page-length {
+    padding-top: -150px;
+    background: url("~/images/length.png") no-repeat;
+    background-position: 240px 100px;
+}
+
+.button-home-page-temperature {
+    padding-top: -150px;
+    background: url("~/images/temp.png") no-repeat;
+    background-position: 240px 100px;
+}
+
+.button-home-page-currency {
+    padding-top: -150px;
+    background: url("~/images/currency.png") no-repeat;
+    background-position: 240px 100px;
+}
+
+.button-home-page-time {
+    padding-top: -150px;
+    background: url("~/images/time.png") no-repeat;
+    background-position: 240px 100px;
+}
+
+.button-page-kggr {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/kggr.png") no-repeat;
+    background-position: 150px 230px; 
+}
+
+.button-page-kgt {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/kgton.png") no-repeat;
+    background-position: 150px 230px;
+}
+
+.button-page-hourweek {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/hourweek.png") no-repeat;
+    background-position: 150px 230px;
+}
+
+.button-page-weekyear {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/weekyear.png") no-repeat;
+    background-position: 150px 230px;
+}
+
+.button-length {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/length2.png") no-repeat;
+    background-position: 240px 230px;
+}
+
+.button-page-rubhr {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/rubhrivnia.png") no-repeat;
+    background-position: 200px 230px;
+}
+
+.button-page-hrtenge {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/hrivniatenge.png") no-repeat;
+    background-position: 200px 230px;
+}
+
+.button-page-celfahr {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/celsiusfahr.png") no-repeat;
+    background-position: 180px 230px;
+}
+
+.button-page-celkel {
+    padding-top: -150px;
+    height: 450px;
+    background: url("~/images/celsiuskelvin.png") no-repeat;
+    background-position: 180px 230px;
+}
+
