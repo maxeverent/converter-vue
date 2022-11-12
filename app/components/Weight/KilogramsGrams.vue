@@ -11,14 +11,14 @@
                     <TextField v-model="kilograms" editable="false" class="row-items row-input-text input"/>
                     <Button text="<=>" @tap="reverse()" class="button"/>
                     <Label text="to grams:" class="row-items"/>
-                    <Label v-model="grams" editable="false" class="row-items row-input-text"/>
+                    <Label v-model="foont" editable="false" class="row-items row-input-text"/>
                 </StackLayout>
                 <Button text="Convert" @tap="convert()" class="button" />
             </template>
             <template v-else>
                 <StackLayout>
                     <Label text="from grams:" class="row-items"/>
-                    <TextField v-model="grams" editable="false" class="row-items row-input-text input"/>
+                    <TextField v-model="foont" editable="false" class="row-items row-input-text input"/>
                     <Button text="<=>" @tap="reverse()" class="button"/>
                     <Label text="to kilograms:" class="row-items"/>
                     <Label v-model="kilograms" editable="false" class="row-items row-input-text"/>
@@ -27,7 +27,7 @@
             </template>
             <Keyboard class="keyboard"
                 :firstValue="kilograms"
-                :secondValue="grams"
+                :secondValue="foont"
                 :reverseStatus="reverseStatus"
                 @updateParents="update"
             />
@@ -42,7 +42,7 @@ import Keyboard from '../Keyboard.vue'
     data() {
         return {
             kilograms: '',
-            grams: '',
+            foont: '',
             reverseStatus: true,
             WeightPage: WeightPage,
         }
@@ -51,28 +51,28 @@ import Keyboard from '../Keyboard.vue'
     methods: {
         reverse() {
             this.reverseStatus = !this.reverseStatus
-            this.kilograms = this.grams = ''     
+            this.kilograms = this.foont = ''     
         },
         convert() {
             if (this.reverseStatus === false) {
-                this.kilograms = this.grams/1000
+                this.kilograms = this.foont/2.20462
                 if (isNaN(this.kilograms)) {
                     this.kilograms = 'Error'
                 }
             }
             if (this.reverseStatus === true) {
-                this.grams = this.kilograms*1000
-                if (isNaN(this.grams)) {
-                    this.grams = 'Error'
+                this.foont = this.kilograms*2.20462
+                if (isNaN(this.foont)) {
+                    this.foont = 'Error'
                 }
             } 
         },
         update(data) {
             this.kilograms = data.first
-            this.grams = data.second
+            this.foont = data.second
         }
     },
 };
 </script>
 
-<style src="@/style.css"></style>
+<style src="@/style-converter.css"></style>

@@ -36,4 +36,4 @@ import timePage from '../components/Time/TimePage.vue'
     };
 </script>
 
-<style src="@/style.css"></style>
+<style src="@/style-converter.css"></style>

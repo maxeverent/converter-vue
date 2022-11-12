@@ -76,4 +76,4 @@ import Keyboard from '../Keyboard.vue'
 };
 </script>
 
-<style src="@/style.css"></style>
+<style src="@/style-converter.css"></style>

@@ -26,4 +26,4 @@ import HomePage from '../Home.vue'
     }
 </script>
 
-<style src="@/style.css"></style>
+<style src="@/style-converter.css"></style>
